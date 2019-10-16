@@ -14,7 +14,7 @@ If anyone has already written a code on a specific problem, you can update the c
 
 ### Contribution Type 3 
 
-You can also make any contribution by deleting a file in any folder. Use commit message `#<Issue Number> Deleted <filename>`
+You can also make any contribution by deleting a file in any folder. Make sure to delete any unused file in the repo. Use commit message `#<Issue Number> Deleted <filename>`
 
 
 ## To contribute to this repo: 
