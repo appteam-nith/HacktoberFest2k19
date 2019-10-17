@@ -15,7 +15,7 @@ To fork a repo, click on fork button on the upper right hand corner of the scree
 
 ### Clone the repository 
 - To clone a repo to your computer, click on **Clone or Download** button and copy the link to clipboard.
-- Go to terminal, type `git clone [link]` 
+- Go to terminal, type `git clone <link>` 
 
 ### Solve some issue 
 - Add a new file
@@ -32,7 +32,7 @@ To stage any changes, use `git add <filename>`
 To view the files that are staged, use `git status` 
 
 ### Commit changes 
-To commit changes made, use `git commit -m "<message" `
+To commit changes made, use `git commit -m "<message">`
 
 ### Push changes 
 - To push changes to your forked repo, use `git push origin master` 
