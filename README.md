@@ -1,4 +1,4 @@
-# HacktoberFest2k19 Workshop 
+# HacktoberFest 2k19 Workshop 
 This repo is meant for HacktoberFest2k19 workshop.
 We gladly accept any contributions that are made to this repo as a part of Hacktober Fest 2k19.
 
