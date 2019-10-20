@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+int n;
+printf("Enter the number whose factorial is to be calculated");
+scanf("%d",&n);
+int i,f=1;
+for(i=1;i<=n;i++)
+{
+f=f*i;
+}
+printf("factorial: %d",f);
+return 0;
+}
