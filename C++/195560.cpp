@@ -23,7 +23,7 @@ int main()
 	cout<<"Enter the Size of the array";
 	cin>>size;
 	int A[size];
-	cout<<"\nEnter the elements of the array\n";
+	cout<<"\nEnter the elements of the array\n";		//to print :>
 	for(int i=0;i<size;i++)
 	{
 		cin>>A[i];
