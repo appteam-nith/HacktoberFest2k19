@@ -7,7 +7,7 @@ cout<<"Value of A = ";
 cin>>a;
 cout<<"Value of D = ";
 cin>>d;
-cout<<"Number of Terms = ";
+cout<<"Number of Terms  = ";
 cin>>n;
 	
 	for(int i=1; i<=n; i++)
