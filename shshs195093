@@ -1,0 +1,24 @@
+
+#include<stdio.h>
+main()
+{
+	int a[15],b[5],i,j;
+	for(i=0;i<15;i++)
+	{
+		printf("PLZ ENTER %d ELEMENT OF 1st ARRAY  \n",i+1);
+		scanf("%d",&a[i]);		
+	}
+	for(i=0;i<5;i++){
+			printf("PLZ ENTER %d ELEMENT OF 2nd ARRAY  \n",i+1);
+		scanf("%d",&b[i]);	
+	}
+	printf("ENTER NO. FROM WHICH YOU WANT TO ADD TWO ARRAY");
+	scanf("%d",&j);
+	for(i=0;i<j;i++)
+		printf("%d",a[i]);
+	for(i=0;i<5;i++)
+	printf("%d",b[i]);
+	for(i=j;i<15;i++)
+	printf("%d",a[i]);
+	return 0;
+}
