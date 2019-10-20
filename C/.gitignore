@@ -1,2 +1,6 @@
-*
-!.gitignore
+#include<stdio.h>
+int main()
+{
+   printf("Hello world I am on");
+   return 0;
+}
