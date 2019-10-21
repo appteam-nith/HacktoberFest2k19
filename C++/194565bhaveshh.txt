@@ -1,0 +1,9 @@
+#include<iostream.h>
+#include<conio.h>
+
+int main()
+{
+clrscr();
+cout<<"I am coder";
+getch();
+} 
