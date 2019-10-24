@@ -2,10 +2,10 @@
 #include<conio.h>
 int main()
 {
-	int a,b,average;
+	int a,b,mean;
 	printf("enter two numbers:\n");
 	scanf("%d%d",&a,&b);
-	average=(a+b)/2;
-	printf("average=%d",average);
+mean=(a+b)/2;
+	printf("average=%d",mean);
 	return 0;
 }
