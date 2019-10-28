@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a=3,b=1;
+int subtract;
+subtract=a-b;
+printf("subtract=%d",subtract);
+getch();
+}
