@@ -1,0 +1,6 @@
+
+a=input()
+b=len(a)
+d=int(input())
+e=d%b
+print(a[e:]+a[:e][::1])
