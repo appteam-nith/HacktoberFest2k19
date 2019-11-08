@@ -1,0 +1,78 @@
+#include<stdio.h>
+#include<graphics.h>
+#include<math.h>
+void removeCircle(int xc, int yc, int x, int y) 
+{ 
+	putpixel(xc+x, yc+y, BLACK); 
+	putpixel(xc-x, yc+y, BLACK); 
+	putpixel(xc+x, yc-y, BLACK); 
+	putpixel(xc-x, yc-y, BLACK); 
+	putpixel(xc+y, yc+x, BLACK); 
+	putpixel(xc-y, yc+x, BLACK); 
+	putpixel(xc+y, yc-x, BLACK); 
+	putpixel(xc-y, yc-x, BLACK); 
+} 
+void drawCircle(int xc, int yc, int x, int y) 
+{ 
+	putpixel(xc+x, yc+y, WHITE); 
+	putpixel(xc-x, yc+y, WHITE); 
+	putpixel(xc+x, yc-y, WHITE); 
+	putpixel(xc-x, yc-y, WHITE); 
+	putpixel(xc+y, yc+x, WHITE); 
+	putpixel(xc-y, yc+x, WHITE); 
+	putpixel(xc+y, yc-x, WHITE); 
+	putpixel(xc-y, yc-x, WHITE); 
+} 
+
+void circleBres(int xc, int yc, int r, int flag) 
+{ 
+	int x = 0, y = r; 
+	int d = 3 - 2 * r; 
+    if(flag)
+	drawCircle(xc, yc, x, y); 
+    else
+    {
+        removeCircle(xc,yc,x,y);
+    }
+    
+	while (y >= x) 
+	{	
+		x++;
+		if (d > 0) 
+		{ 
+			y--; 
+			d = d + 4 * (x - y) + 10; 
+		} 
+		else
+			d = d + 4 * x + 6; 
+            if(flag)
+		drawCircle(xc, yc, x, y); 
+        else
+        {
+            removeCircle(xc,yc,x,y);
+        }
+        
+	} 
+} 
+
+int main(){
+    int gd = DETECT, gm;
+    initgraph(&gd, &gm, NULL);
+    line(100,400,400,400);
+    line(100,400,100,200);
+    line(400,400,100,200);
+    double theta,y_offset,x_offset,d=40,stx,sty,h=200,l=300,dy,dx,d0,x=100,y=200;
+    x_offset = d/2;
+    y_offset = d/2*cos(33.69) - d/2*tan(33.69);
+    dy = h/l;
+    while(x < 380){
+        delay(1);
+        circleBres(x+x_offset,y-y_offset,d/2, 1);
+        delay(1);
+    circleBres(x+x_offset,y-y_offset,d/2, 0);
+     x++;
+    y = y + dy;
+    }
+    circleBres(x+x_offset,y-y_offset,d/2,1);
+    getch();
+}
